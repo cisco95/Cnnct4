@@ -26,6 +26,41 @@ api = tweepy.API(auth, wait_on_rate_limit=True)
 client = tweepy.Client(auth, wait_on_rate_limit=True)
 
 
+def print_twitter_board(board):
+    COL_MAX = 7
+    ROW_MAX = 6
+    newBoard = [['' for i in range(COL_MAX)] for j in range(ROW_MAX)]
+    for i in range(COL_MAX):
+        for j in range(ROW_MAX):
+            if board[j][i] == 0:
+                newBoard[j][i] = '⚪️'
+            elif board[j][i] == 1:
+                newBoard[j][i] = '🔴'
+            elif board[j][i] == -1:
+                newBoard[j][i] = '🟡'
+            else:
+                print("Error!")
+
+    newBoard = np.array(newBoard)
+    return newBoard
+
+
+def make_board_string(board):
+    COL_MAX = 7
+    ROW_MAX = 6
+    printable_board = ''
+
+    for i in range(ROW_MAX):
+        temp_string = ''
+        for j in range(COL_MAX):
+            temp_string += str(board[i][j])
+
+        temp_string += '\n'
+        printable_board = temp_string + printable_board
+        # append_string(printable_board, temp_string)
+    return printable_board
+
+
 def get_screen_name(id):
     user = api.get_user(id)
     screen_name = user.screen_name
