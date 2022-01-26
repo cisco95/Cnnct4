@@ -29,6 +29,8 @@ How to:
 4. Paste that into the ***latest_mention_id.txt*** text file, replacing whatever text is on the first line. 
 
 5. Run the following command to begin twitterbot: 
-```	python3 cnnct4.py```
+```
+	python3 cnnct4.py
+```
 
 Enjoy!
