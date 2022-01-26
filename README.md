@@ -8,6 +8,7 @@ How to:
 1. Download these files. 
 2. Add auth.py file to project, containing all authentication codes necessary... template below, simply fill in values in single-quoted sections:
 
+```
 	# Twitter API
 	consumer_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxx'
 	consumer_secret = 'xxxxxxxxxxxxxxxxxxxxxxxxxx'
@@ -19,7 +20,7 @@ How to:
 	# DynamoDB
 	ACCESS_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxx'
 	SECRET_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxx'
-
+```
 
 3. Manually retrieve the latest mention status ID for the bot's twitter account. 
 	- This can be by using the Tweepy api.mentions_timeline() method in python and finding the ID of the first listed Item
