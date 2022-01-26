@@ -23,12 +23,12 @@ How to:
 ```
 
 3. Manually retrieve the latest mention status ID for the bot's twitter account. 
-	- This can be by using the Tweepy api.mentions_timeline() method in python and finding the ID of the first listed Item
+	- This can be by using the Tweepy ***api.mentions_timeline()*** method in python and finding the ID of the first listed Item
 	- OR just go to the latest mention for that Twitter account in the Twitter desktop app, and copy the list of numbers at the end of the URL. 
 
-4. Paste that into the latest_mention_id.txt text file, replacing whatever text is on the first line. 
+4. Paste that into the ***latest_mention_id.txt*** text file, replacing whatever text is on the first line. 
 
 5. Run the following command to begin twitterbot: 
-	python3 cnnct4.py
+```	python3 cnnct4.py```
 
 Enjoy!
