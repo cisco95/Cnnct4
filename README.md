@@ -3,6 +3,8 @@ A twitterbot for Connect 4
 
 Uses Tweepy API and AWS-DynamoDB as the database for storing user IDs, game board, game status, and wins/losses. 
 
+###### **NOTE: currently not connected to AWS-DynamoDB, as free tier began charging. Will be updating with new database settings soon. **   
+
 
 How to:
 1. Download these files. 
