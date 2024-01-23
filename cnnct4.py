@@ -12,17 +12,17 @@ import numpy as np
 
 # import keys from auth, keys generated from twitter developer console. 
 from auth import (
-    consumer_key, # "API Key"
-    consumer_secret, # "API Key Secret"
-    access_token, 
-    access_token_secret
+    consumer_key, # "API Key" 
+    consumer_secret, # "API Key Secret" 
+    access_token,  
+    access_token_secret 
 )
 # from twitter_cnnct4 import make_board_string, print_twitter_board
 
-auth = tweepy.OAuth1UserHandler(consumer_key, consumer_secret, access_token, access_token_secret)
+auth = tweepy.OAuth1UserHandler(consumer_key, consumer_secret, access_token, access_token_secret) 
 
-api = tweepy.API(auth, wait_on_rate_limit=True)
-client = tweepy.Client(auth, wait_on_rate_limit=True)
+api = tweepy.API(auth, wait_on_rate_limit=True) 
+client = tweepy.Client(auth, wait_on_rate_limit=True) 
 
 
 def print_twitter_board(board):
