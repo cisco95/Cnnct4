@@ -1,2 +1,3 @@
 #Ignored keys/auth codes
 auth.py
+__pycache__
