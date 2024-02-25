@@ -1,10 +1,10 @@
 # Cnnct4
 
+# **NOTE: No longer functions as is, as Twitter API v1.1 has been deprecated and free tier of X API v2 no longer allows reading of posts**
+
 A twitterbot for Connect 4
 
 Uses Tweepy API and AWS-DynamoDB as the database for storing user IDs, game board, game status, and wins/losses.
-
-###### **NOTE: No longer functions as is, as Twitter API v1.1 has been deprecated and free tier of X API v2 no longer allows reading of posts**
 
 How to:
 
